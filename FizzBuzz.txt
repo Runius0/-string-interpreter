@@ -1,0 +1,38 @@
+-counter = -1
+-fizzCount = -2
+-buzzCount = -4
+
+: loop
+
+-next = 
+
+-checkFizz = fizzCount -fizz
+-checkBuzz = buzzCount -buzz
+! checkFizz
+! checkBuzz
+
+-next = counter
+! -continue
+
+: 0fizz
+-next = next -Fizz
+-fizzCount = -3
+! checkBuzz
+! -continue
+
+: 0buzz
+-next = next -Buzz
+-buzzCount = -5
+
+: continue
+-out = next
+
+-exitCheck = counter -Exit
+
+- -fizzCount
+- -buzzCount
++ -counter
+
+! exitCheck
+! -loop
+: 100Exit

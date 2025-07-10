@@ -1,0 +1,11 @@
+-num1 = in
+-num2 = in
+: loop
++ -num1
+- -num2
+-exitCheck = num2 -Exit
+
+! exitCheck
+! -loop
+: 0Exit
+-out = num1
